@@ -25,6 +25,7 @@ Keywords:  Macroeconomics, agent-based, game, learning, stochastic optimization
 
 ==============
 To use:
+
 1. download source code and compile using -std=c++11 flag (or similar)
 
 2. You will need boost and Eigen headers (no install required) for compilation
