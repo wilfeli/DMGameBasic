@@ -19,6 +19,7 @@ JEL Codes: B4, C6, C7, E03, E2
 Keywords:  Macroeconomics; agent-based modeling; game theory; intertemporal optimization; learning; constructive rationality
 
 ==============
+
 To use:
 
 1. download source code and compile using -std=c++11 flag (or similar)
