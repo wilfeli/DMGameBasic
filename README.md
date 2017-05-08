@@ -2,26 +2,23 @@ DMGameBasic
 ===========
 
 This code implements the basic Dynamic Macroeconomic (DM) Game model developed in the following working paper:
-http://www.econ.iastate.edu/tesfatsi/MacroConstructiveRationalityWP.SinitskayaTesfatsion.pdf
+http://www2.econ.iastate.edu/tesfatsi/MacroConstructiveRationalityWP.SinitskayaTesfatsion.pdf
 
-Title: 
 
-"Macroeconomies as Constructively Rational Games"
+Ekaterina Sinitskaya and Leigh Tesfatsion, "Macroeconomies as Constructively Rational Games," Journal of Economic Dynamics and Control, Vol. 61, 2015, 152-182.
 
-Authors: 
 
-Ekaterina Sinitskaya and Leigh Tesfatsion 
-Department of Economics, Iowa State University 
-Ames, Iowa 50011-1070
+Contacts:
+
 kate.sinitskaya@gmail.com, tesfatsi@iastate.edu
 
 Abstract:
 
-Real-world decision-makers are forced to be locally constructive, in the sense that their actions are constrained by the interaction networks, limited information, and computational capabilities at their disposal.  This study poses the following question: Suppose utility-seeking consumers and profit-seeking firms in an otherwise standard dynamic macroeconomic model are required to be locally constructive decision-makers, unaided by the external imposition of global coordination conditions.  What combinations of locally constructive decision rules result in good macroeconomic performance relative to a social planner benchmark model, and what are the game-theoretic properties of these decision-rule combinations?  We begin our investigation of this question by specifying locally constructive decision rules for the consumers and firms that range from simple fixed behaviors to sophisticated approximate dynamic programming algorithms.  We then use computational experiments to explore macroeconomic performance under alternative decision-rule combinations.  A key finding is that simpler rules can outperform more sophisticated rules, but that forward-looking behavior coupled with a relatively long memory permitting past observations to inform current decision-making is critical for good performance.
+Real-world decision-makers are forced to be locally constructive; that is, their decisions are necessarily constrained by their interaction networks, information, beliefs, and physical states. This study transforms an otherwise standard dynamic macroeconomic model into an open-ended dynamic game by requiring consumers and firms with intertemporal utility and profit objectives to be locally constructive. Tested locally-constructive decision processes for the consumers and firms range from simple reactive reinforcement learning to adaptive dynamic programming (ADP). Computational experiments are used to explore macroeconomic performance under alternative decision-process combinations relative to a social planner benchmark solution. A key finding is that simpler decision processes can outperform more sophisticated decision processes such as ADP. However, memory length permitting some degree of adaptive foresight is critical for good performance.
 
 JEL Codes: B4, C6, C7, E03, E2
 
-Keywords:  Macroeconomics, agent-based, game, learning, stochastic optimization
+Keywords:  Macroeconomics; agent-based modeling; game theory; intertemporal optimization; learning; constructive rationality
 
 ==============
 To use:
