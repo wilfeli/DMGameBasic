@@ -1,9 +1,7 @@
 DMGameBasic
 ===========
 
-This code implements the basic Dynamic Macroeconomic (DM) Game model developed in the following working paper:
-http://www2.econ.iastate.edu/tesfatsi/MacroConstructiveRationalityWP.SinitskayaTesfatsion.pdf
-
+This code implements the basic Dynamic Macroeconomic (DM) Game model developed in the following paper:
 
 Ekaterina Sinitskaya and Leigh Tesfatsion, "Macroeconomies as Constructively Rational Games," Journal of Economic Dynamics and Control, Vol. 61, 2015, 152-182.
 
@@ -17,6 +15,12 @@ Real-world decision-makers are forced to be locally constructive; that is, their
 JEL Codes: B4, C6, C7, E03, E2
 
 Keywords:  Macroeconomics; agent-based modeling; game theory; intertemporal optimization; learning; constructive rationality
+
+
+Working paper preprint available at:
+
+http://www2.econ.iastate.edu/tesfatsi/MacroConstructiveRationalityWP.SinitskayaTesfatsion.pdf
+
 
 ==============
 
