@@ -25,9 +25,23 @@ http://www2.econ.iastate.edu/tesfatsi/MacroConstructiveRationalityWP.SinitskayaT
 ==============
 
 To use:
+---------
 
+Preferred way 
+
+You would need Visual Studio 2015 for Windows 10
+1. download solution file (and all other source and configuration code, cloning repository is enough for that)
+2. compile to your preferred solution configuration (debug for ability to debug extensively, release if you want speed)
+3. run
+
+
+Configuration
+1. minimacro.exe requires two parameters: path to the configuration file, path to the save directory. Visual Studio solution/project file uses minimacro.ini file in the conf directory and saves results into Saves directory.
+2. There are sample bash scripts that were used in the initial runs. They were utilized to generate .ini files for each configuration and run application file. They were tested on Mac (in 2014) and are included as a reference only. Do not expect them to work on Windows or Linux out of the box. 
+
+
+
+Manual compilation
 1. download source code and compile using -std=c++11 flag (or similar)
-
-2. You will need boost and Eigen headers (no install required) for compilation
-
+2. You will need boost and Eigen headers (no install required) for compilation. Compatible headers are included with the source code. 
 3. minimacro.ini is a sample .ini file
