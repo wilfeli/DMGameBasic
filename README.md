@@ -43,5 +43,5 @@ You would need Visual Studio 2015 for Windows 10
 
 ### Manual compilation
 1. download source code and compile using -std=c++11 flag (or similar)
-2. You will need boost and Eigen headers (no install required) for compilation. Compatible headers are included with the source code. 
+2. You will need boost and Eigen headers (no install required) for compilation. Compatible headers are included with the source code, you might use them if you wish. 
 3. minimacro.ini is a sample .ini file
