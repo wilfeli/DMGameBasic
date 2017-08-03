@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\BashScripts">
+      <UniqueIdentifier>{efd1a64c-c3ab-4b09-b45a-afd2b9cc4f91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Accounting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Agent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Asset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Contract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\F.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Good.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\H.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\History.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IAgent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IBuyer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ISeller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Market.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MarketTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\minimacro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Parameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PaymentSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\W.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Accounting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Agent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Asset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Contract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Expectations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\F.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Good.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\H.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\History.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IAgent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IBuyer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ISeller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Market.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MarketTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PaymentSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\W.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="conf\minimacro.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_a_EO3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_a_FL3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_a_RL3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_ADP3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_EO_a3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_EO3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_FL_a3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_FL3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_RL_a3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\minimacro_RL3.sh">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_a_ADP.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_a_EO.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_a_FL.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_a_RL.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_ADP.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_ADP_a.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_EO.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_EO_a.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_FL.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_FL_a.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_RL.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+    <None Include="conf\BashScripts\template_minimacro_RL_a.ini">
+      <Filter>Resource Files\BashScripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>

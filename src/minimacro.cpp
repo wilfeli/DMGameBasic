@@ -33,14 +33,6 @@ save_history(W& w, int N, std::string file_path){
 
     
     
-#ifdef __linux__
-	file_path_default = "/home/cat/Dropbox/HFmodel/test_results/12082014_B/";
-#endif
-
-#ifdef  __APPLE__
-	file_path_default = "/Users/wilfeli/Dropbox/HFmodel/test_results/12082014_B/";
-#endif
-    
     if (file_path.empty()){
         file_path = file_path_default;
     };
@@ -164,7 +156,7 @@ save_history(W& w, int N, std::string file_path){
 	};
     out_file.open(file_name);
 	if (out_file){
-		out_file << f_all.format(CleanFmt);;
+		out_file << f_all.format(CleanFmt);
 	};
 	out_file.close();
 
@@ -177,13 +169,6 @@ read_init(double& seed_, int& N_, std::map <std::string, std::string> &ini, std:
 	std::string file_path_default;
 	std::string file_name_default;
     
-#ifdef __linux__
-	file_path_default = "/home/cat/Dropbox/HFmodel/test_results/12082014_B/";
-#endif
-    
-#ifdef  __APPLE__
-	file_path_default = "/Users/wilfeli/Dropbox/HFmodel/test_results/12082014_B/";
-#endif
 
 	//open ini file
 	file_name_default = "minimacro.ini";
@@ -273,13 +258,13 @@ int main(int argc, char *argv[]) {
     std::string wm_length;
     wm_length = simulation_ini["F_wm_LENGTH"];
     if (wm_length == "inf"){
-        w.param->F_wm_LENGTH = 1.0/0.0;
+        w.param->F_wm_LENGTH = std::numeric_limits<double>::infinity();;
     }else{
         w.param->F_wm_LENGTH = std::stod(simulation_ini["F_wm_LENGTH"]);
     };
     wm_length = simulation_ini["H_wm_LENGTH"];
     if (wm_length == "inf"){
-        w.param->H_wm_LENGTH = 1.0/0.0;
+        w.param->H_wm_LENGTH = std::numeric_limits<double>::infinity();;
     }else{
         w.param->H_wm_LENGTH = std::stod(simulation_ini["H_wm_LENGTH"]);
     };

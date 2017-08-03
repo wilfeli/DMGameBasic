@@ -22,15 +22,15 @@ public:
     MyRNG(double);
     
     double GetUniform();
-    uint GetUint();
+    uint64_t GetUint();
     
     double state = 2013;
     bool hasSpare = false;
     double rn1 = 0.0;
     double rn2 = 0.0;
     
-    uint m_w = 521288629;
-    uint m_z = 362436069;
+	uint64_t m_w = 521288629;
+	uint64_t m_z = 362436069;
 };
 
 extern double get_normal(double, double, MyRNG&);

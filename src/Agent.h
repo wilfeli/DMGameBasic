@@ -14,7 +14,7 @@ class Agent{
 public:
 	int status = 1;
 	int t_begin_life = 0;
-	double t_end_life = 1.0/0.0;
+	double t_end_life = std::numeric_limits<double>::infinity();
 	std::string type = "Agent";
 
 };

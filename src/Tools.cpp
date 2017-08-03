@@ -159,7 +159,7 @@ MyRNG::MyRNG(double seed_):state(seed_){
 double
 MyRNG::GetUniform(){
     // 0 <= u < 2^32
-    uint u = GetUint();
+	uint64_t u = GetUint();
     // The magic number below is 1/(2^32 + 2).
     // The result is strictly between 0 and 1.
     return (u + 1.0) * 2.328306435454494e-10;
@@ -169,7 +169,7 @@ MyRNG::GetUniform(){
 // It uses George Marsaglia's MWC algorithm to produce an unsigned integer.
 // See http://www.bobwheeler.com/statistics/Password/MarsagliaPost.txt
 
-uint
+uint64_t
 MyRNG::GetUint(){
     m_z = 36969 * (m_z & 65535) + (m_z >> 16);
     m_w = 18000 * (m_w & 65535) + (m_w >> 16);
@@ -201,7 +201,7 @@ get_normal(double mean, double sigma, MyRNG& rng){
     
 int
 get_int(int min, int max, MyRNG& rng){
-    uint x_raw = rng.GetUint();
+	uint64_t x_raw = rng.GetUint();
     //clean state of rng to simplify code
     rng.hasSpare = false;
     

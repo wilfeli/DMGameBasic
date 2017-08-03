@@ -23,7 +23,7 @@ public:
 	double DIV_SHARE = 0.5; //share of dividends to pay
     std::string ACCOUNTING_TYPE  = "classic"; //type of accounting
 	double BETA = 0.95; //discounting rate
-	double WM_LENGTH = 1.0/0.0; //length of wm
+	double WM_LENGTH = std::numeric_limits<double>::infinity(); //length of wm
 	double wm_INSIDE_UPDATE = 0.0; //update inside opt search
     int opt_CS_N = 10;//number of random draws for runs
     std::string opt_TYPE = "EO_CS"; //type of optimization algorithm (could be EO_ADP, QL, mRE)
@@ -51,8 +51,8 @@ public:
 	double F_asCBDt0_Q = 100.0;
 	double H_asCBDt0_Q = 1.0;
 
-	double F_wm_LENGTH = 1.0/0.0;
-	double H_wm_LENGTH = 1.0/0.0;
+	double F_wm_LENGTH = std::numeric_limits<double>::infinity();
+	double H_wm_LENGTH = std::numeric_limits<double>::infinity();
 
 	int F_T_MAX = 20;
 	int H_T_MAX = 20;

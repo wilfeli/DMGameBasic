@@ -203,7 +203,7 @@ F::_mas_q_sell(MessageMarketCCheckAsk* inf){
 	//checks how much to sell
 	//return q from ask
 
-	double q_sell;
+	double q_sell = 0.0;
 
 	if (inf->p_eq >= c_ask.p){
 		q_sell = c_ask.q;
@@ -217,7 +217,7 @@ F::_mas_q_buy(MessageMarketLCheckBid* inf){
 	//checks how much to sell
 	//return q from ask
 
-	double q_buy;
+	double q_buy = 0.0;
 
 	if (inf->p_eq <= l_bid.p){
 		q_buy = l_bid.q;

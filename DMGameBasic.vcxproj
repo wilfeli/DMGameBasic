@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7904FA5F-8B96-4A75-83D6-9F3B880A1873}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\ExternalTools\boost_1_60_0;$(SolutionDir)\ExternalTools\Eigen;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\ExternalTools\boost_1_60_0;$(SolutionDir)\ExternalTools\Eigen;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\ExternalTools\boost_1_60_0;$(SolutionDir)\ExternalTools\Eigen;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\ExternalTools\boost_1_60_0;$(SolutionDir)\ExternalTools\Eigen;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Accounting.cpp" />
+    <ClCompile Include="src\Agent.cpp" />
+    <ClCompile Include="src\Asset.cpp" />
+    <ClCompile Include="src\CB.cpp" />
+    <ClCompile Include="src\Contract.cpp" />
+    <ClCompile Include="src\F.cpp" />
+    <ClCompile Include="src\Good.cpp" />
+    <ClCompile Include="src\H.cpp" />
+    <ClCompile Include="src\History.cpp" />
+    <ClCompile Include="src\IAgent.cpp" />
+    <ClCompile Include="src\IBuyer.cpp" />
+    <ClCompile Include="src\ISeller.cpp" />
+    <ClCompile Include="src\Market.cpp" />
+    <ClCompile Include="src\MarketTools.cpp" />
+    <ClCompile Include="src\Message.cpp" />
+    <ClCompile Include="src\minimacro.cpp" />
+    <ClCompile Include="src\Parameters.cpp" />
+    <ClCompile Include="src\PaymentSystem.cpp" />
+    <ClCompile Include="src\Tools.cpp" />
+    <ClCompile Include="src\W.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Accounting.h" />
+    <ClInclude Include="src\Agent.h" />
+    <ClInclude Include="src\Asset.h" />
+    <ClInclude Include="src\CB.h" />
+    <ClInclude Include="src\Contract.h" />
+    <ClInclude Include="src\Expectations.h" />
+    <ClInclude Include="src\F.h" />
+    <ClInclude Include="src\Good.h" />
+    <ClInclude Include="src\H.h" />
+    <ClInclude Include="src\History.h" />
+    <ClInclude Include="src\IAgent.h" />
+    <ClInclude Include="src\IBuyer.h" />
+    <ClInclude Include="src\ISeller.h" />
+    <ClInclude Include="src\Market.h" />
+    <ClInclude Include="src\MarketTools.h" />
+    <ClInclude Include="src\Message.h" />
+    <ClInclude Include="src\Parameters.h" />
+    <ClInclude Include="src\PaymentSystem.h" />
+    <ClInclude Include="src\Tools.h" />
+    <ClInclude Include="src\W.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="conf\BashScripts\minimacro_ADP3.sh" />
+    <None Include="conf\BashScripts\minimacro_a_EO3.sh" />
+    <None Include="conf\BashScripts\minimacro_a_FL3.sh" />
+    <None Include="conf\BashScripts\minimacro_a_RL3.sh" />
+    <None Include="conf\BashScripts\minimacro_EO3.sh" />
+    <None Include="conf\BashScripts\minimacro_EO_a3.sh" />
+    <None Include="conf\BashScripts\minimacro_FL3.sh" />
+    <None Include="conf\BashScripts\minimacro_FL_a3.sh" />
+    <None Include="conf\BashScripts\minimacro_RL3.sh" />
+    <None Include="conf\BashScripts\minimacro_RL_a3.sh" />
+    <None Include="conf\BashScripts\template_minimacro.ini" />
+    <None Include="conf\BashScripts\template_minimacro_ADP.ini" />
+    <None Include="conf\BashScripts\template_minimacro_ADP_a.ini" />
+    <None Include="conf\BashScripts\template_minimacro_a_ADP.ini" />
+    <None Include="conf\BashScripts\template_minimacro_a_EO.ini" />
+    <None Include="conf\BashScripts\template_minimacro_a_FL.ini" />
+    <None Include="conf\BashScripts\template_minimacro_a_RL.ini" />
+    <None Include="conf\BashScripts\template_minimacro_EO.ini" />
+    <None Include="conf\BashScripts\template_minimacro_EO_a.ini" />
+    <None Include="conf\BashScripts\template_minimacro_FL.ini" />
+    <None Include="conf\BashScripts\template_minimacro_FL_a.ini" />
+    <None Include="conf\BashScripts\template_minimacro_RL.ini" />
+    <None Include="conf\BashScripts\template_minimacro_RL_a.ini" />
+    <None Include="conf\minimacro.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
