@@ -37,7 +37,7 @@ You would need Visual Studio 2015 for Windows 10
 
 ### Configuration
 1. minimacro.exe requires two parameters: path to the configuration file, path to the save directory. Visual Studio solution/project file uses minimacro.ini file in the conf directory and saves results into Saves directory.
-2. There are sample bash scripts that were used in the initial runs. They were utilized to generate .ini files for each configuration and run application file. They were tested on Mac (in 2014) and are included as a reference only. Do not expect them to work on Windows or Linux out of the box. 
+2. There are sample bash scripts in the conf\BashScripts directory that were used in the initial runs. They were utilized to generate .ini files for each configuration and run application file. They were tested on Mac (in 2014) and are included as a reference only. Do not expect them to work on Windows or Linux out of the box. 
 
 
 
